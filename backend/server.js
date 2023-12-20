@@ -48,6 +48,7 @@ const io = require("socket.io")(server, {
   pingTimeOut: 60000, // i.e it waits for 60 secs before it goes off
   cors: {
     origin: "https://anurag-deploys.onrender.com",
+    methods: ["GET", "POST","PUT"],
   },
 });
 
