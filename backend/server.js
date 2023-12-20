@@ -47,7 +47,7 @@ const server = app.listen(
 const io = require("socket.io")(server, {
   pingTimeOut: 60000, // i.e it waits for 60 secs before it goes off
   cors: {
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000", "https://anurag-deploys.onrender.com"],
   },
 });
 
